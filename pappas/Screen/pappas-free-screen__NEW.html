@@ -1,26 +1,26 @@
-   <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_28_" class="_form _form_28 _inline-form  _dark" novalidate>
-     <input type="hidden" name="u" value="28" />
-     <input type="hidden" name="f" value="28" />
+   <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_8_" class="_form _form_8 _inline-form  _dark" novalidate>
+     <input type="hidden" name="u" value="8" />
+     <input type="hidden" name="f" value="8" />
      <input type="hidden" name="s" />
      <input type="hidden" name="c" value="0" />
      <input type="hidden" name="m" value="0" />
      <input type="hidden" name="act" value="sub" />
      <input type="hidden" name="v" value="2" />
      <div class="_form-content">
-       <div class="_form_element _x39431271 _full_width " >
+       <div class="_form_element _x27696604 _full_width " >
          <label class="_form-label">
-           Full Name <span class="required">*</span>
+           First Name <span class="required">*</span>
          </label>
          <div class="_field-wrapper">
-           <input type="text" name="fullname" placeholder="Type your name" required/>
+           <input type="text" name="firstname" placeholder="Type your first name" required/>
          </div>
        </div>
-       <div class="_form_element _x21415060 _full_width " >
+       <div class="_form_element _x45364925 _full_width " >
          <label class="_form-label">
-           Phone<span class="required">*</span>
+           Last Name<span class="required">*</span>
          </label>
          <div class="_field-wrapper">
-           <input type="text" name="phone" placeholder="Type your phone number" required/>
+           <input type="text" name="lastname" placeholder="Type your last name" required/>
          </div>
        </div>
        <div class="_form_element _x76167424 _full_width " >
@@ -29,6 +29,14 @@
          </label>
          <div class="_field-wrapper">
            <input type="text" name="email" placeholder="Type your email" required/>
+         </div>
+       </div>
+       <div class="_form_element _x74977535 _full_width " >
+         <label class="_form-label">
+           Phone<span class="required">*</span>
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="phone" placeholder="Type your phone number" required/>
          </div>
        </div>
        <div class="_form_element _field31 _full_width " >
@@ -63,7 +71,7 @@
            </span>
          </div>
        </div>
-       <div class="_form_element _x54133580 _full_width " >
+       <div class="_form_element _x49100666 _full_width " >
          <label class="_form-label">
            Please verify your request<span class="required">*</span>
          </label>
@@ -71,7 +79,7 @@
          </div>
        </div>
        <div class="_button-wrapper _full_width">
-         <button id="_form_28_submit" class="_submit" type="submit">
+         <button id="_form_8_submit" class="_submit" type="submit">
            Submit
          </button>
        </div>
@@ -150,7 +158,7 @@
        }
      }
      var _removed = false;
-     var form_to_submit = document.getElementById('_form_28_');
+     var form_to_submit = document.getElementById('_form_8_');
      var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
    
      var getUrlParam = function(name) {
@@ -397,8 +405,8 @@
        e.preventDefault();
        if (validate_form()) {
          // use this trick to get the submit button & disable it using plain javascript
-         document.querySelector('#_form_28_submit').disabled = true;
-               var serialized = _form_serialize(document.getElementById('_form_28_'));
+         document.querySelector('#_form_8_submit').disabled = true;
+               var serialized = _form_serialize(document.getElementById('_form_8_'));
          var err = form_to_submit.querySelector('._form_error');
          err ? err.parentNode.removeChild(err) : false;
          _load_script('https://confluenthealth.activehosted.com/proc.php?' + serialized + '&jsonp=true');
