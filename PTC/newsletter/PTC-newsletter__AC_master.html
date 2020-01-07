@@ -89,11 +89,6 @@
    <input type="hidden" name="act" value="sub" />
    <input type="hidden" name="v" value="2" />
    <div class="_form-content">
-     <div class="_form_element _x96845853 _full_width _clear" >
-       <div class="_form-title">
-         Subscribe for Email Updates
-       </div>
-     </div>
      <div class="_form_element _x89927195 _full_width " >
        <label class="_form-label">
          Email*
@@ -111,12 +106,6 @@
      </div>
    </div>
    <div class="_form-thank-you" style="display:none;">
-   </div>
-   <div class="_form-branding">
-     <div class="_marketing-by">
-       Marketing by
-     </div>
-     <a href="http://www.activecampaign.com" class="_logo"></a>
    </div>
  </form><script type="text/javascript">
  window.cfields = [];
@@ -208,6 +197,9 @@
      var fieldVal = getUrlParam(allInputs[i].dataset.name);
  
      if (fieldVal) {
+             if (allInputs[i].dataset.autofill === "false") {
+                 continue;
+             }
        if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
          if (allInputs[i].value == fieldVal) {
            allInputs[i].checked = true;

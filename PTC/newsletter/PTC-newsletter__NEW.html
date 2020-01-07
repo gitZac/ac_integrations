@@ -115,6 +115,9 @@
      var fieldVal = getUrlParam(allInputs[i].dataset.name);
  
      if (fieldVal) {
+             if (allInputs[i].dataset.autofill === "false") {
+                 continue;
+             }
        if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
          if (allInputs[i].value == fieldVal) {
            allInputs[i].checked = true;

@@ -26,7 +26,7 @@ p {
 }
 .fl-module-pp-infobox.dual-color .pp-infobox-title strong {
     text-transform: uppercase;
-    color: #80a1b6;
+    color: #92bd3e;
 }
 .fl-module-pp-infobox.dual-color.call-now .pp-infobox-description, .fl-module-pp-infobox.dual-color.chat-now .pp-infobox-description, .fl-module-pp-infobox.dual-color.schedule-now .pp-infobox-description {
     max-width: 265px;
@@ -250,13 +250,12 @@ p {
     font-size: 16px;
     font-weight: 600;
     border: none;
-    background: #80a1b6;
+    background: #92bd3e;
     border-radius: 5px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
     margin-top: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 ._form._form_26 ._submit:after {
@@ -265,7 +264,7 @@ p {
     margin-left: 8px;
 }
 ._form._form_26 ._submit:hover, ._form._form_26 ._submit:focus {
-    background: #668192;
+    background: #749731;
 }
 .negMarg {
     position: relative;
