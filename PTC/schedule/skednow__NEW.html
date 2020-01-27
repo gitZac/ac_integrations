@@ -1,3 +1,4 @@
+
  <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_26_" class="_form _form_26 _inline-form  _dark" novalidate>
    <input type="hidden" name="u" value="26" />
    <input type="hidden" name="f" value="26" />
@@ -10,7 +11,7 @@
      <div class="left-column">
       <div class="_form_element _x69032286 _full_width " >
         <label class="_form-label">
-          First Name<span class="required">*</span>
+          First Name <span class="required">*</span>
         </label>
         <div class="_field-wrapper">
           <input type="text" name="firstname" placeholder="Type your first name" required/>
@@ -50,10 +51,10 @@
       </div>
       <div class="_form_element _field46 _full_width " >
         <label class="_form-label">
-          Select a PTC Location
+          Select a PTC Location<span class="required">*</span>
         </label>
         <div class="_field-wrapper">
-          <select name="field[46]" >
+          <select name="field[46]" required>
             <option selected>
             </option>
             <option value="Bethany" >
@@ -143,6 +144,9 @@
             <option value="Stillwater" >
               Stillwater
             </option>
+            <option value="West Edmond" >
+              West Edmond
+            </option>
             <option value="Yukon" >
               Yukon
             </option>
@@ -162,7 +166,7 @@
       <div class="_form_element _field32 _full_width " >
         <div class="_row">
           <label class="_form-label">
-            How Did You Hear About Us<span class="required">*</span>
+            How Did You Hear About Us?<span class="required">*</span>
           </label>
         </div>
         <input data-autofill="false" type="hidden" name="field[32][]" value="~|">
@@ -255,24 +259,22 @@
         </div>
         <input data-autofill="false" type="hidden" name="field[53][]" value="~|">
         <div class="_row _checkbox-radio">
-          <input id="field_53I understand this communication may be insecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." type="checkbox" name="field[53][]" value="I understand this communication may be insecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." class="any"  required>
+          <input id="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." type="checkbox" name="field[53][]" value="I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." class="any"  required>
           <span>
-            <label for="field_53I understand this communication may be insecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.">
-              I understand this communication may be insecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.<span class="required">*</span>
+            <label for="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.">
+              I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.
             </label>
           </span>
         </div>
       </div>
       <div class="_form_element _x58001940 _full_width " >
         <label class="_form-label">
-          Please verify your request <span class="required">*</span>
+          Please verify your request<span class="required">*</span>
         </label>
         <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
         </div>
       </div>
      </div>
-
- 
      <div class="_button-wrapper _full_width">
        <button id="_form_26_submit" class="_submit" type="submit">
          Schedule an Appointment
