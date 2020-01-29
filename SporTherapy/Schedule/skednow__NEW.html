@@ -1,4 +1,4 @@
- <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_83_" class="_form _form_83 _inline-form  _dark" novalidate>
+<form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_83_" class="_form _form_83 _inline-form  _dark" novalidate>
    <input type="hidden" name="u" value="83" />
    <input type="hidden" name="f" value="83" />
    <input type="hidden" name="s" />
@@ -42,22 +42,19 @@
       </div>
       <div class="_form_element _field30 _full_width " >
         <label class="_form-label">
-          Insurance Provider
+          Insurance Provider<span class="required">*</span>
         </label>
         <div class="_field-wrapper">
-          <input type="text" name="field[30]" value="" placeholder="" />
+          <input type="text" name="field[30]" value="" placeholder="" required/>
         </div>
       </div>
-      <div class="_form_element _field58 _full_width " >
+      <div class="_form_element _field61 _full_width " >
         <label class="_form-label">
-          Select a SporTherapy Location
+          Select a SporTherapy Location<span class="required">*</span>
         </label>
         <div class="_field-wrapper">
-          <select name="field[58]" >
+          <select name="field[61]" required>
             <option selected>
-            </option>
-            <option value="Granbury" >
-              Granbury
             </option>
             <option value="Alliance" >
               Alliance
@@ -65,17 +62,20 @@
             <option value="Azle" >
               Azle
             </option>
-            <option value="Weatherford" >
-              Weatherford
+            <option value="Fossil Creek" >
+              Fossil Creek
+            </option>
+            <option value="Granbury" >
+              Granbury
             </option>
             <option value="Northwest" >
               Northwest
             </option>
-            <option value="Fossil Creek" >
-              Fossil Creek
-            </option>
             <option value="Southwest" >
               Southwest
+            </option>
+            <option value="Weatherford" >
+              Weatherford
             </option>
           </select>
         </div>
@@ -196,17 +196,15 @@
       </div>
       <div class="_form_element _x59639265 _full_width " >
         <label class="_form-label">
-          Please verify your request<span class="required">*</span>
+          Please verify your request <span class="required">*</span>
         </label>
         <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
         </div>
       </div>
      </div>
-
- 
      <div class="_button-wrapper _full_width">
        <button id="_form_83_submit" class="_submit" type="submit">
-         Schedule Your Appointment!
+         Schedule an Appointment!
        </button>
      </div>
      <div class="_clear-element">
@@ -215,7 +213,7 @@
    <div class="_form-thank-you" style="display:none;">
    </div>
  </form><script type="text/javascript">
- window.cfields = {"30":"insurance_provider","58":"select_a_sportherapy_location","31":"questions_comments_or_reasons_for_visit","32":"how_did_you_hear_about_us","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
+ window.cfields = {"30":"insurance_provider","61":"select_a_sportherapy_location_1","31":"questions_comments_or_reasons_for_visit","32":"how_did_you_hear_about_us","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
  window._show_thank_you = function(id, message, trackcmp_url) {
    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
    form.querySelector('._form-content').style.display = 'none';
