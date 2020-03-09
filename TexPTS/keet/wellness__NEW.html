@@ -166,6 +166,9 @@
            <option value="Gruene" >
              Gruene
            </option>
+           <option value="Hutto" >
+             Hutto
+           </option>
            <option value="Kyle" >
              Kyle
            </option>
@@ -332,19 +335,19 @@
    }
  };
  window._load_script = function(url, callback) {
-     var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-     script.type = 'text/javascript';
-     script.charset = 'utf-8';
-     script.src = url;
-     if (callback) {
-       script.onload = script.onreadystatechange = function() {
+   var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+   script.type = 'text/javascript';
+   script.charset = 'utf-8';
+   script.src = url;
+   if (callback) {
+     script.onload = script.onreadystatechange = function() {
        if (!r && (!this.readyState || this.readyState == 'complete')) {
          r = true;
          callback();
-         }
-       };
-     }
-     head.appendChild(script);
+       }
+     };
+   }
+   head.appendChild(script);
  };
  (function() {
    if (window.location.search.search("excludeform") !== -1) return false;
@@ -391,9 +394,9 @@
      var fieldVal = getUrlParam(allInputs[i].dataset.name);
  
      if (fieldVal) {
-             if (allInputs[i].dataset.autofill === "false") {
-                 continue;
-             }
+       if (allInputs[i].dataset.autofill === "false") {
+         continue;
+       }
        if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
          if (allInputs[i].value == fieldVal) {
            allInputs[i].checked = true;
@@ -408,7 +411,7 @@
      for (var i = 0; i < tooltips.length; i++) {
        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
      }
-       tooltips = [];
+     tooltips = [];
    };
    var remove_tooltip = function(elem) {
      for (var i = 0; i < tooltips.length; i++) {
