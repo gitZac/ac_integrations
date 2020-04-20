@@ -121,6 +121,38 @@
          <input type="text" name="email" placeholder="Type your email" required/>
        </div>
      </div>
+     <div class="_form_element _field45 _full_width " >
+       <label class="_form-label">
+         Select an OSPTKY Location*
+       </label>
+       <div class="_field-wrapper">
+         <select name="field[45]" required>
+           <option selected>
+           </option>
+           <option value="Clarksville" >
+             Clarksville
+           </option>
+           <option value="Hamburg" >
+             Hamburg
+           </option>
+           <option value="Lexington" >
+             Lexington
+           </option>
+           <option value="Lincoln County" >
+             Lincoln County
+           </option>
+           <option value="Louisville" >
+             Louisville
+           </option>
+           <option value="Performance PT (Lexington)" >
+             Performance PT (Lexington)
+           </option>
+           <option value="Richmond" >
+             Richmond
+           </option>
+         </select>
+       </div>
+     </div>
      <div class="_form_element _field31 _full_width " >
        <label class="_form-label">
          Questions, Comments, or Reason(s) for Visit
@@ -195,7 +227,7 @@
    <div class="_form-thank-you" style="display:none;">
    </div>
  </form><script type="text/javascript">
- window.cfields = {"31":"questions_comments_or_reasons_for_visit","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
+ window.cfields = {"45":"select_and_osptky_location","31":"questions_comments_or_reasons_for_visit","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
  window._show_thank_you = function(id, message, trackcmp_url) {
    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
    form.querySelector('._form-content').style.display = 'none';
