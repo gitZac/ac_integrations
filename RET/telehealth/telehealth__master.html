@@ -47,6 +47,8 @@
   #_form_208_ ._error-arrow { position:absolute; width:0; height:0; }
   #_form_208_ ._error-html { margin-bottom:10px; }
   .pika-single { z-index:10000001 !important; }
+  #_form_208_ input[type="text"].datetime_date { width:69%; display:inline; }
+  #_form_208_ select.datetime_time { width:29%; display:inline; height:32px; }
   @media all and (min-width:320px) and (max-width:667px) { ::-webkit-scrollbar { display:none; }
   #_form_208_ { margin:0; width:100%; min-width:100%; max-width:100%; box-sizing:border-box; }
   #_form_208_ * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:1em; }
@@ -68,6 +70,7 @@
   #_form_208_ ._inline-style { margin:20px 0 0 !important; }
   }
   #_form_208_ { position:relative; text-align:left; margin:25px auto 0; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *zoom:1; background:#fff !important; border:0px solid #b0b0b0 !important; width:500px; -moz-border-radius:0px !important; -webkit-border-radius:0px !important; border-radius:0px !important; color:#000 !important; }
+  #_form_208_._inline-form,#_form_208_._inline-form ._form-content,#_form_208_._inline-form input,#_form_208_._inline-form ._submit { font-family:"IBM Plex Sans", Helvetica, sans-serif, 'IBM Plex Sans', arial, sans-serif; }
   #_form_208_ ._form-title { font-size:22px; line-height:22px; font-weight:600; margin-bottom:0; }
   #_form_208_:before,#_form_208_:after { content:" "; display:table; }
   #_form_208_:after { clear:both; }
@@ -80,128 +83,268 @@
   @media all and (min-width:320px) and (max-width:667px) { #_form_208_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
   }
  </style>
- <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_208_" class="_form _form_208 _inline-form  _dark" novalidate>
-   <input type="hidden" name="u" value="208" />
-   <input type="hidden" name="f" value="208" />
-   <input type="hidden" name="s" />
-   <input type="hidden" name="c" value="0" />
-   <input type="hidden" name="m" value="0" />
-   <input type="hidden" name="act" value="sub" />
-   <input type="hidden" name="v" value="2" />
-   <div class="_form-content">
-     <div class="_form_element _x04151244 _full_width " >
-       <label class="_form-label">
-         First Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="firstname" placeholder="Type your first name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x47559172 _full_width " >
-       <label class="_form-label">
-         Last Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="lastname" placeholder="Type your last name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x21415060 _full_width " >
-       <label class="_form-label">
-         Phone*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="phone" placeholder="Type your phone number" required/>
-       </div>
-     </div>
-     <div class="_form_element _x76167424 _full_width " >
-       <label class="_form-label">
-         Email*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="email" placeholder="Type your email" required/>
-       </div>
-     </div>
-     <div class="_form_element _field31 _full_width " >
-       <label class="_form-label">
-         Questions, Comments, or Reason(s) for Visit
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="field[31]" value="" placeholder="" />
-       </div>
-     </div>
-     <div class="_form_element _field33 _full_width " >
-       <div class="_row">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+   <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_208_" class="_form _form_208 _inline-form  _dark" novalidate>
+     <input type="hidden" name="u" value="208" />
+     <input type="hidden" name="f" value="208" />
+     <input type="hidden" name="s" />
+     <input type="hidden" name="c" value="0" />
+     <input type="hidden" name="m" value="0" />
+     <input type="hidden" name="act" value="sub" />
+     <input type="hidden" name="v" value="2" />
+     <div class="_form-content">
+       <div class="_form_element _x04151244 _full_width " >
          <label class="_form-label">
-           How would you prefer to be contacted to schedule your appointment?*
+           First Name*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="firstname" placeholder="Type your first name" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[33][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_33Phone" type="checkbox" name="field[33][]" value="Phone" class="any"  required>
-         <span>
-           <label for="field_33Phone">
-             Phone
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_33Email" type="checkbox" name="field[33][]" value="Email"   >
-         <span>
-           <label for="field_33Email">
-             Email
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_33Text" type="checkbox" name="field[33][]" value="Text"   >
-         <span>
-           <label for="field_33Text">
-             Text
-           </label>
-         </span>
-       </div>
-     </div>
-     <div class="_form_element _field53 _full_width " >
-       <div class="_row">
+       <div class="_form_element _x47559172 _full_width " >
          <label class="_form-label">
-           Consent*
+           Last Name*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="lastname" placeholder="Type your last name" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[53][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." type="checkbox" name="field[53][]" value="I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." class="any"  required>
-         <span>
-           <label for="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.">
-             I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.
+       <div class="_form_element _x21415060 _full_width " >
+         <label class="_form-label">
+           Phone*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="phone" placeholder="Type your phone number" required/>
+         </div>
+       </div>
+       <div class="_form_element _x76167424 _full_width " >
+         <label class="_form-label">
+           Email*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="email" placeholder="Type your email" required/>
+         </div>
+       </div>
+       <div class="_form_element _field31 _full_width " >
+         <label class="_form-label">
+           Questions, Comments, or Reason(s) for Visit
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="field[31]" value="" placeholder="" />
+         </div>
+       </div>
+       <div class="_form_element _field74 _full_width " >
+         <label class="_form-label">
+           Select an RET PT Group Location
+         </label>
+         <div class="_field-wrapper">
+           <select name="field[74]" >
+             <option selected>
+             </option>
+             <option value="Aquatic Therapy Center" >
+               Aquatic Therapy Center
+             </option>
+             <option value="Arlington (Reaction Physical Therapy)" >
+               Arlington (Reaction Physical Therapy)
+             </option>
+             <option value="Auburn (Auburn Sports Physical Therapy)" >
+               Auburn (Auburn Sports Physical Therapy)
+             </option>
+             <option value="Auburn (Lakeland Sports &amp; Spine Physical Therapy)" >
+               Auburn (Lakeland Sports &amp; Spine Physical Therapy)
+             </option>
+             <option value="Bellevue (Bellevue Hand Therapy)" >
+               Bellevue (Bellevue Hand Therapy)
+             </option>
+             <option value="Bellevue (Bellevue Physical Therapy)" >
+               Bellevue (Bellevue Physical Therapy)
+             </option>
+             <option value="Bellevue (Crossroads Physical Therapy)" >
+               Bellevue (Crossroads Physical Therapy)
+             </option>
+             <option value="Bellevue (Washington Hand Therapy)" >
+               Bellevue (Washington Hand Therapy)
+             </option>
+             <option value="Bothell (Bothell Physical Therapy)" >
+               Bothell (Bothell Physical Therapy)
+             </option>
+             <option value="Burien (Burien Physical Therapy)" >
+               Burien (Burien Physical Therapy)
+             </option>
+             <option value="Burien (Highline Hand Therapy)" >
+               Burien (Highline Hand Therapy)
+             </option>
+             <option value="Burien (RET Burien Physical Therapy)" >
+               Burien (RET Burien Physical Therapy)
+             </option>
+             <option value="Gig Harbor (Source Therapy)" >
+               Gig Harbor (Source Therapy)
+             </option>
+             <option value="Issaquah (Lake Sammamish Physical Therapy)" >
+               Issaquah (Lake Sammamish Physical Therapy)
+             </option>
+             <option value="Issaquah (Washington Hand Therapy)" >
+               Issaquah (Washington Hand Therapy)
+             </option>
+             <option value="Kirkland (Kirkland Hand Therapy)" >
+               Kirkland (Kirkland Hand Therapy)
+             </option>
+             <option value="Kirkland (Totem Lake Physical Therapy)" >
+               Kirkland (Totem Lake Physical Therapy)
+             </option>
+             <option value="Kirkland (Washington Hand Therapy Kirkland)" >
+               Kirkland (Washington Hand Therapy Kirkland)
+             </option>
+             <option value="Lacey (Puget Sound Physical Therapy)" >
+               Lacey (Puget Sound Physical Therapy)
+             </option>
+             <option value="Lake Stevens (Reaction Physical Therapy)" >
+               Lake Stevens (Reaction Physical Therapy)
+             </option>
+             <option value="Lynnwood (OrthoSport Physical Therapy)" >
+               Lynnwood (OrthoSport Physical Therapy)
+             </option>
+             <option value="Mercer Island (Mercer Island Physical Therapy)" >
+               Mercer Island (Mercer Island Physical Therapy)
+             </option>
+             <option value="North Bend (North Bend Physical Therapy)" >
+               North Bend (North Bend Physical Therapy)
+             </option>
+             <option value="Puyallup (Meridian Physical Rehabilitation Center)" >
+               Puyallup (Meridian Physical Rehabilitation Center)
+             </option>
+             <option value="Puyallup (Meridian Physical Therapy)" >
+               Puyallup (Meridian Physical Therapy)
+             </option>
+             <option value="Puyallup (Summit)" >
+               Puyallup (Summit)
+             </option>
+             <option value="Puyallup (Sunrise)" >
+               Puyallup (Sunrise)
+             </option>
+             <option value="Redmond (Eastside Physical Therapy)" >
+               Redmond (Eastside Physical Therapy)
+             </option>
+             <option value="Renton (Renton Sports &amp; Spine Physical Therapy)" >
+               Renton (Renton Sports &amp; Spine Physical Therapy)
+             </option>
+             <option value="Renton (Washington Hand Therapy)" >
+               Renton (Washington Hand Therapy)
+             </option>
+             <option value="Seattle (Northgate Physical Therapy)" >
+               Seattle (Northgate Physical Therapy)
+             </option>
+             <option value="Seattle (South Lake Union Physical Therapy)" >
+               Seattle (South Lake Union Physical Therapy)
+             </option>
+             <option value="Seattle (University Physical Therapy)" >
+               Seattle (University Physical Therapy)
+             </option>
+             <option value="Seattle (Washington Hand Therapy Northgate)" >
+               Seattle (Washington Hand Therapy Northgate)
+             </option>
+             <option value="Smokey Point / Marysville (Reaction Physical Therapy)" >
+               Smokey Point / Marysville (Reaction Physical Therapy)
+             </option>
+             <option value="Snoqualmie (Snoqualmie Physical Therapy)" >
+               Snoqualmie (Snoqualmie Physical Therapy)
+             </option>
+             <option value="Tacoma (Tacoma Central Physical Therapy)" >
+               Tacoma (Tacoma Central Physical Therapy)
+             </option>
+             <option value="Tukwila Movement and Performance Physical Therapy (Tukwila)" >
+               Tukwila Movement and Performance Physical Therapy (Tukwila)
+             </option>
+             <option value="University Place Physical Therapy" >
+               University Place Physical Therapy
+             </option>
+             <option value="West Seattle (Southwest Hand Therapy)" >
+               West Seattle (Southwest Hand Therapy)
+             </option>
+             <option value="Woodinville (Washington Hand Therapy)" >
+               Woodinville (Washington Hand Therapy)
+             </option>
+           </select>
+         </div>
+       </div>
+       <div class="_form_element _field33 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             How would you prefer to be contacted to schedule your appointment?*
            </label>
-         </span>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[33][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_33Phone" type="checkbox" name="field[33][]" value="Phone" class="any"  required>
+           <span>
+             <label for="field_33Phone">
+               Phone
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_33Email" type="checkbox" name="field[33][]" value="Email"   >
+           <span>
+             <label for="field_33Email">
+               Email
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_33Text" type="checkbox" name="field[33][]" value="Text"   >
+           <span>
+             <label for="field_33Text">
+               Text
+             </label>
+           </span>
+         </div>
+       </div>
+       <div class="_form_element _field53 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             Consent*
+           </label>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[53][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." type="checkbox" name="field[53][]" value="I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." class="any"  required>
+           <span>
+             <label for="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.">
+               I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.
+             </label>
+           </span>
+         </div>
+       </div>
+       <div class="_form_element _x54133580 _full_width " >
+         <label class="_form-label">
+           Please verify your request*
+         </label>
+         <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+         </div>
+       </div>
+       <div class="_button-wrapper _full_width">
+         <button id="_form_208_submit" class="_submit" type="submit">
+           Schedule your Telehealth Appointment!
+         </button>
+       </div>
+       <div class="_clear-element">
        </div>
      </div>
-     <div class="_form_element _x54133580 _full_width " >
-       <label class="_form-label">
-         Please verify your request*
-       </label>
-       <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
-       </div>
+     <div class="_form-thank-you" style="display:none;">
      </div>
-     <div class="_button-wrapper _full_width">
-       <button id="_form_208_submit" class="_submit" type="submit">
-         Schedule your Telehealth Appointment!
-       </button>
-     </div>
-     <div class="_clear-element">
-     </div>
-   </div>
-   <div class="_form-thank-you" style="display:none;">
-   </div>
- </form><script type="text/javascript">
- window.cfields = {"31":"questions_comments_or_reasons_for_visit","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
- window._show_thank_you = function(id, message, trackcmp_url) {
+   </form><script type="text/javascript">
+ window.cfields = {"31":"questions_comments_or_reasons_for_visit","74":"select_an_ret_pt_group_location","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","53":"consent"};
+ window._show_thank_you = function(id, message, trackcmp_url, email) {
    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
    form.querySelector('._form-content').style.display = 'none';
    thank_you.innerHTML = message;
    thank_you.style.display = 'block';
-   if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+   const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+   var visitorObject = window[vgoAlias];
+   if (email && typeof visitorObject !== 'undefined') {
+     visitorObject('setEmail', email);
+     visitorObject('update');
+   } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
      // Site tracking URL to use after inline form submission.
      _load_script(trackcmp_url);
    }
@@ -430,7 +573,13 @@
      return no_error;
    };
    var needs_validate = function(el) {
-     return el.name == 'email' || el.getAttribute('required') !== null;
+         if(el.getAttribute('required') !== null){
+             return true
+         }
+         if(el.name === 'email' && el.value !== ""){
+             return true
+         }
+         return false
    };
    var validate_form = function(e) {
      var err = form_to_submit.querySelector('._form_error'), no_error = true;
