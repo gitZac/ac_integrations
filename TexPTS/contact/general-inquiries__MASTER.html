@@ -47,6 +47,8 @@
   #_form_79_ ._error-arrow { position:absolute; width:0; height:0; }
   #_form_79_ ._error-html { margin-bottom:10px; }
   .pika-single { z-index:10000001 !important; }
+  #_form_79_ input[type="text"].datetime_date { width:69%; display:inline; }
+  #_form_79_ select.datetime_time { width:29%; display:inline; height:32px; }
   @media all and (min-width:320px) and (max-width:667px) { ::-webkit-scrollbar { display:none; }
   #_form_79_ { margin:0; width:100%; min-width:100%; max-width:100%; box-sizing:border-box; }
   #_form_79_ * { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-size:1em; }
@@ -68,6 +70,7 @@
   #_form_79_ ._inline-style { margin:20px 0 0 !important; }
   }
   #_form_79_ { position:relative; text-align:left; margin:25px auto 0; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *zoom:1; background:#fff !important; border:0px solid #b0b0b0 !important; width:500px; -moz-border-radius:0px !important; -webkit-border-radius:0px !important; border-radius:0px !important; color:#000 !important; }
+  #_form_79_._inline-form,#_form_79_._inline-form ._form-content,#_form_79_._inline-form input,#_form_79_._inline-form ._submit { font-family:"IBM Plex Sans", Helvetica, sans-serif, 'IBM Plex Sans', arial, sans-serif; }
   #_form_79_ ._form-title { font-size:22px; line-height:22px; font-weight:600; margin-bottom:0; }
   #_form_79_:before,#_form_79_:after { content:" "; display:table; }
   #_form_79_:after { clear:both; }
@@ -80,136 +83,158 @@
   @media all and (min-width:320px) and (max-width:667px) { #_form_79_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
   }
  </style>
- <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_79_" class="_form _form_79 _inline-form  _dark" novalidate>
-   <input type="hidden" name="u" value="79" />
-   <input type="hidden" name="f" value="79" />
-   <input type="hidden" name="s" />
-   <input type="hidden" name="c" value="0" />
-   <input type="hidden" name="m" value="0" />
-   <input type="hidden" name="act" value="sub" />
-   <input type="hidden" name="v" value="2" />
-   <div class="_form-content">
-     <div class="_form_element _x74479764 _full_width " >
-       <label class="_form-label">
-         First Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="firstname" placeholder="Type your first name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x16854404 _full_width " >
-       <label class="_form-label">
-         Last Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="lastname" placeholder="Type your last name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x55217374 _full_width " >
-       <label class="_form-label">
-         Email*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="email" placeholder="Type your email" required/>
-       </div>
-     </div>
-     <div class="_form_element _x44090114 _full_width " >
-       <label class="_form-label">
-         Phone*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="phone" placeholder="Type your phone number" required/>
-       </div>
-     </div>
-     <div class="_form_element _field31 _full_width " >
-       <label class="_form-label">
-         Questions, Comments, or Reason(s) for Visit
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="field[31]" value="" placeholder="" />
-       </div>
-     </div>
-     <div class="_form_element _field32 _full_width " >
-       <div class="_row">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+   <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_79_" class="_form _form_79 _inline-form  _dark" novalidate>
+     <input type="hidden" name="u" value="79" />
+     <input type="hidden" name="f" value="79" />
+     <input type="hidden" name="s" />
+     <input type="hidden" name="c" value="0" />
+     <input type="hidden" name="m" value="0" />
+     <input type="hidden" name="act" value="sub" />
+     <input type="hidden" name="v" value="2" />
+     <div class="_form-content">
+       <div class="_form_element _x74479764 _full_width " >
          <label class="_form-label">
-           How Did You Hear About Us?*
+           First Name*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="firstname" placeholder="Type your first name" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[32][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_32Doctor Referral" type="checkbox" name="field[32][]" value="Doctor Referral" class="any"  required>
-         <span>
-           <label for="field_32Doctor Referral">
-             Doctor Referral
-           </label>
-         </span>
+       <div class="_form_element _x16854404 _full_width " >
+         <label class="_form-label">
+           Last Name*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="lastname" placeholder="Type your last name" required/>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Friend or Family Member" type="checkbox" name="field[32][]" value="Friend or Family Member"   >
-         <span>
-           <label for="field_32Friend or Family Member">
-             Friend or Family Member
-           </label>
-         </span>
+       <div class="_form_element _x55217374 _full_width " >
+         <label class="_form-label">
+           Email*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="email" placeholder="Type your email" required/>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Radio" type="checkbox" name="field[32][]" value="Radio"   >
-         <span>
-           <label for="field_32Radio">
-             Radio
-           </label>
-         </span>
+       <div class="_form_element _x44090114 _full_width " >
+         <label class="_form-label">
+           Phone*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="phone" placeholder="Type your phone number" required/>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Google" type="checkbox" name="field[32][]" value="Google"   >
-         <span>
-           <label for="field_32Google">
-             Google
-           </label>
-         </span>
+       <div class="_form_element _field31 _full_width " >
+         <label class="_form-label">
+           Questions, Comments, or Reason(s) for Visit
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="field[31]" value="" placeholder="" />
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Social Media" type="checkbox" name="field[32][]" value="Social Media"   >
-         <span>
-           <label for="field_32Social Media">
-             Social Media
+       <div class="_form_element _field32 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             How Did You Hear About Us?*
            </label>
-         </span>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[32][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_32Doctor Referral" type="checkbox" name="field[32][]" value="Doctor Referral" class="any"  required>
+           <span>
+             <label for="field_32Doctor Referral">
+               Doctor Referral
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Friend or Family Member" type="checkbox" name="field[32][]" value="Friend or Family Member"   >
+           <span>
+             <label for="field_32Friend or Family Member">
+               Friend or Family Member
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Radio" type="checkbox" name="field[32][]" value="Radio"   >
+           <span>
+             <label for="field_32Radio">
+               Radio
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Google" type="checkbox" name="field[32][]" value="Google"   >
+           <span>
+             <label for="field_32Google">
+               Google
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Social Media" type="checkbox" name="field[32][]" value="Social Media"   >
+           <span>
+             <label for="field_32Social Media">
+               Social Media
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Other" type="checkbox" name="field[32][]" value="Other"   >
+           <span>
+             <label for="field_32Other">
+               Other
+             </label>
+           </span>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Other" type="checkbox" name="field[32][]" value="Other"   >
-         <span>
-           <label for="field_32Other">
-             Other
+       <div class="_form_element _field53 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             Consent*
            </label>
-         </span>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[53][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." type="checkbox" name="field[53][]" value="I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party." class="any"  required>
+           <span>
+             <label for="field_53I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.">
+               I understand this communication may be unsecure and consent to being contacted by text or email. I understand that sensitive or individually identifiable health information may be disclosed to an unauthorized party.
+             </label>
+           </span>
+         </div>
+       </div>
+       <div class="_form_element _x18793802 _full_width " >
+         <label class="_form-label">
+           Please verify your request*
+         </label>
+         <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+         </div>
+       </div>
+       <div class="_button-wrapper _full_width">
+         <button id="_form_79_submit" class="_submit" type="submit">
+           Submit
+         </button>
+       </div>
+       <div class="_clear-element">
        </div>
      </div>
-     <div class="_form_element _x18793802 _full_width " >
-       <label class="_form-label">
-         Please verify your request*
-       </label>
-       <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
-       </div>
+     <div class="_form-thank-you" style="display:none;">
      </div>
-     <div class="_button-wrapper _full_width">
-       <button id="_form_79_submit" class="_submit" type="submit">
-         Submit
-       </button>
-     </div>
-     <div class="_clear-element">
-     </div>
-   </div>
-   <div class="_form-thank-you" style="display:none;">
-   </div>
- </form><script type="text/javascript">
- window.cfields = {"31":"questions_comments_or_reasons_for_visit","32":"how_did_you_hear_about_us"};
- window._show_thank_you = function(id, message, trackcmp_url) {
+   </form><script type="text/javascript">
+ window.cfields = {"31":"questions_comments_or_reasons_for_visit","32":"how_did_you_hear_about_us","53":"consent"};
+ window._show_thank_you = function(id, message, trackcmp_url, email) {
    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
    form.querySelector('._form-content').style.display = 'none';
    thank_you.innerHTML = message;
    thank_you.style.display = 'block';
-   if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+   const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+   var visitorObject = window[vgoAlias];
+   if (email && typeof visitorObject !== 'undefined') {
+     visitorObject('setEmail', email);
+     visitorObject('update');
+   } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
      // Site tracking URL to use after inline form submission.
      _load_script(trackcmp_url);
    }
@@ -233,19 +258,19 @@
    }
  };
  window._load_script = function(url, callback) {
-     var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-     script.type = 'text/javascript';
-     script.charset = 'utf-8';
-     script.src = url;
-     if (callback) {
-       script.onload = script.onreadystatechange = function() {
+   var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+   script.type = 'text/javascript';
+   script.charset = 'utf-8';
+   script.src = url;
+   if (callback) {
+     script.onload = script.onreadystatechange = function() {
        if (!r && (!this.readyState || this.readyState == 'complete')) {
          r = true;
          callback();
-         }
-       };
-     }
-     head.appendChild(script);
+       }
+     };
+   }
+   head.appendChild(script);
  };
  (function() {
    if (window.location.search.search("excludeform") !== -1) return false;
@@ -292,9 +317,9 @@
      var fieldVal = getUrlParam(allInputs[i].dataset.name);
  
      if (fieldVal) {
-             if (allInputs[i].dataset.autofill === "false") {
-                 continue;
-             }
+       if (allInputs[i].dataset.autofill === "false") {
+         continue;
+       }
        if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
          if (allInputs[i].value == fieldVal) {
            allInputs[i].checked = true;
@@ -309,7 +334,7 @@
      for (var i = 0; i < tooltips.length; i++) {
        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
      }
-       tooltips = [];
+     tooltips = [];
    };
    var remove_tooltip = function(elem) {
      for (var i = 0; i < tooltips.length; i++) {
@@ -438,7 +463,13 @@
      return no_error;
    };
    var needs_validate = function(el) {
-     return el.name == 'email' || el.getAttribute('required') !== null;
+         if(el.getAttribute('required') !== null){
+             return true
+         }
+         if(el.name === 'email' && el.value !== ""){
+             return true
+         }
+         return false
    };
    var validate_form = function(e) {
      var err = form_to_submit.querySelector('._form_error'), no_error = true;
