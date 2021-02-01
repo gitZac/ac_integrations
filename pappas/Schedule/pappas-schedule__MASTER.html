@@ -70,6 +70,7 @@
   #_form_3_ ._inline-style { margin:20px 0 0 !important; }
   }
   #_form_3_ { position:relative; text-align:left; margin:25px auto 0; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *zoom:1; background:#fff !important; border:0px solid #b0b0b0 !important; width:500px; -moz-border-radius:0px !important; -webkit-border-radius:0px !important; border-radius:0px !important; color:#000 !important; }
+  #_form_3_._inline-form,#_form_3_._inline-form ._form-content,#_form_3_._inline-form input,#_form_3_._inline-form ._submit { font-family:"IBM Plex Sans", Helvetica, sans-serif, 'IBM Plex Sans', arial, sans-serif; }
   #_form_3_ ._form-title { font-size:22px; line-height:22px; font-weight:600; margin-bottom:0; }
   #_form_3_:before,#_form_3_:after { content:" "; display:table; }
   #_form_3_:after { clear:both; }
@@ -82,331 +83,244 @@
   @media all and (min-width:320px) and (max-width:667px) { #_form_3_._inline-form._inline-style ._inline-style._button-wrapper { margin-top:20px !important; margin-left:0 !important; }
   }
  </style>
- <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_3_" class="_form _form_3 _inline-form  _dark" novalidate>
-   <input type="hidden" name="u" value="3" />
-   <input type="hidden" name="f" value="3" />
-   <input type="hidden" name="s" />
-   <input type="hidden" name="c" value="0" />
-   <input type="hidden" name="m" value="0" />
-   <input type="hidden" name="act" value="sub" />
-   <input type="hidden" name="v" value="2" />
-   <div class="_form-content">
-     <div class="_form_element _x26020644 _full_width " >
-       <label class="_form-label">
-         First Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="firstname" placeholder="Type your first name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x49915031 _full_width " >
-       <label class="_form-label">
-         Last Name*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="lastname" placeholder="Type your last name" required/>
-       </div>
-     </div>
-     <div class="_form_element _x36549459 _full_width " >
-       <label class="_form-label">
-         Email*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="email" placeholder="Type your email" required/>
-       </div>
-     </div>
-     <div class="_form_element _x41531137 _full_width " >
-       <label class="_form-label">
-         Phone*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="phone" placeholder="Type your phone number" required/>
-       </div>
-     </div>
-     <div class="_form_element _field30 _full_width " >
-       <label class="_form-label">
-         Insurance Provider*
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="field[30]" value="" placeholder="" required/>
-       </div>
-     </div>
-     <div class="_form_element _field26 _full_width " >
-       <label class="_form-label">
-         Select a Pappas Location*
-       </label>
-       <div class="_field-wrapper">
-         <select name="field[26]" required>
-           <option selected>
-           </option>
-           <option value="Barrington" >
-             Barrington
-           </option>
-           <option value="Bristol" >
-             Bristol
-           </option>
-           <option value="Cranston" >
-             Cranston
-           </option>
-           <option value="East Greenwich Healthtrax" >
-             East Greenwich Healthtrax
-           </option>
-           <option value="East Greenwich NK" >
-             East Greenwich NK
-           </option>
-           <option value="Johnston Center" >
-             Johnston Center
-           </option>
-           <option value="Johnston" >
-             Johnston
-           </option>
-           <option value="Lincoln Center" >
-             Lincoln Center
-           </option>
-           <option value="Middletown" >
-             Middletown
-           </option>
-           <option value="North Providence" >
-             North Providence
-           </option>
-           <option value="Pawtucket" >
-             Pawtucket
-           </option>
-           <option value="Smithfield" >
-             Smithfield
-           </option>
-           <option value="Tiverton" >
-             Tiverton
-           </option>
-           <option value="Warren" >
-             Warren
-           </option>
-           <option value="Warwick" >
-             Warwick
-           </option>
-           <option value="Wakefield" >
-             Wakefield
-           </option>
-         </select>
-       </div>
-     </div>
-     <div class="_form_element _field31 _full_width " >
-       <label class="_form-label">
-         Questions, Comments, or Reason(s) for Visit
-       </label>
-       <div class="_field-wrapper">
-         <input type="text" name="field[31]" value="" placeholder="" />
-       </div>
-     </div>
-     <div class="_form_element _field33 _full_width " >
-       <div class="_row">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+   <form method="POST" action="https://confluenthealth.activehosted.com/proc.php" id="_form_3_" class="_form _form_3 _inline-form  _dark" novalidate>
+     <input type="hidden" name="u" value="3" />
+     <input type="hidden" name="f" value="3" />
+     <input type="hidden" name="s" />
+     <input type="hidden" name="c" value="0" />
+     <input type="hidden" name="m" value="0" />
+     <input type="hidden" name="act" value="sub" />
+     <input type="hidden" name="v" value="2" />
+     <div class="_form-content">
+       <div class="_form_element _x26020644 _full_width " >
          <label class="_form-label">
-           How would you prefer to be contacted to schedule your appointment?*
+           First Name*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="firstname" placeholder="Type your first name" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[33][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_33Phone" type="checkbox" name="field[33][]" value="Phone" class="any"  required>
-         <span>
-           <label for="field_33Phone">
-             Phone
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_33Email" type="checkbox" name="field[33][]" value="Email"   >
-         <span>
-           <label for="field_33Email">
-             Email
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_33Text" type="checkbox" name="field[33][]" value="Text"   >
-         <span>
-           <label for="field_33Text">
-             Text
-           </label>
-         </span>
-       </div>
-     </div>
-     <div class="_form_element _x45054953 _full_width " >
-       <label class="_form-label">
-         Please verify your request*
-       </label>
-       <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
-       </div>
-     </div>
-     <div class="_form_element _field51 _full_width " >
-       <div class="_row">
+       <div class="_form_element _x49915031 _full_width " >
          <label class="_form-label">
-           Time of Day
+           Last Name*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="lastname" placeholder="Type your last name" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[51][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_51Early Morning" type="checkbox" name="field[51][]" value="Early Morning"   >
-         <span>
-           <label for="field_51Early Morning">
-             Early Morning
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_51Late Morning" type="checkbox" name="field[51][]" value="Late Morning"   >
-         <span>
-           <label for="field_51Late Morning">
-             Late Morning
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_51Early Afternoon" type="checkbox" name="field[51][]" value="Early Afternoon"   >
-         <span>
-           <label for="field_51Early Afternoon">
-             Early Afternoon
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_51Late Afternoon" type="checkbox" name="field[51][]" value="Late Afternoon"   >
-         <span>
-           <label for="field_51Late Afternoon">
-             Late Afternoon
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_51Evening" type="checkbox" name="field[51][]" value="Evening"   >
-         <span>
-           <label for="field_51Evening">
-             Evening
-           </label>
-         </span>
-       </div>
-     </div>
-     <div class="_form_element _field52 _full_width " >
-       <div class="_row">
+       <div class="_form_element _x36549459 _full_width " >
          <label class="_form-label">
-           Day of the Week
+           Email*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="email" placeholder="Type your email" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[52][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_52Monday" type="checkbox" name="field[52][]" value="Monday"   >
-         <span>
-           <label for="field_52Monday">
-             Monday
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_52Tuesday" type="checkbox" name="field[52][]" value="Tuesday"   >
-         <span>
-           <label for="field_52Tuesday">
-             Tuesday
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_52Wednesday" type="checkbox" name="field[52][]" value="Wednesday"   >
-         <span>
-           <label for="field_52Wednesday">
-             Wednesday
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_52Thursday" type="checkbox" name="field[52][]" value="Thursday"   >
-         <span>
-           <label for="field_52Thursday">
-             Thursday
-           </label>
-         </span>
-       </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_52Friday" type="checkbox" name="field[52][]" value="Friday"   >
-         <span>
-           <label for="field_52Friday">
-             Friday
-           </label>
-         </span>
-       </div>
-     </div>
-     <div class="_form_element _field32 _full_width " >
-       <div class="_row">
+       <div class="_form_element _x41531137 _full_width " >
          <label class="_form-label">
-           How Did You Hear About Us?
+           Phone*
          </label>
+         <div class="_field-wrapper">
+           <input type="text" name="phone" placeholder="Type your phone number" required/>
+         </div>
        </div>
-       <input data-autofill="false" type="hidden" name="field[32][]" value="~|">
-       <div class="_row _checkbox-radio">
-         <input id="field_32Doctor Referral" type="checkbox" name="field[32][]" value="Doctor Referral"   >
-         <span>
-           <label for="field_32Doctor Referral">
-             Doctor Referral
-           </label>
-         </span>
+       <div class="_form_element _field30 _full_width " >
+         <label class="_form-label">
+           Insurance Provider*
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="field[30]" value="" placeholder="" required/>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Friend or Family Member" type="checkbox" name="field[32][]" value="Friend or Family Member"   >
-         <span>
-           <label for="field_32Friend or Family Member">
-             Friend or Family Member
-           </label>
-         </span>
+       <div class="_form_element _field26 _full_width " >
+         <label class="_form-label">
+           Select a Pappas Location*
+         </label>
+         <div class="_field-wrapper">
+           <select name="field[26]" required>
+             <option selected>
+             </option>
+             <option value="Barrington" >
+               Barrington
+             </option>
+             <option value="Bristol" >
+               Bristol
+             </option>
+             <option value="Cranston" >
+               Cranston
+             </option>
+             <option value="East Greenwich Healthtrax" >
+               East Greenwich Healthtrax
+             </option>
+             <option value="East Greenwich NK" >
+               East Greenwich NK
+             </option>
+             <option value="East Providence" >
+               East Providence
+             </option>
+             <option value="Johnston Center" >
+               Johnston Center
+             </option>
+             <option value="Johnston" >
+               Johnston
+             </option>
+             <option value="Lincoln Center" >
+               Lincoln Center
+             </option>
+             <option value="Middletown" >
+               Middletown
+             </option>
+             <option value="North Providence" >
+               North Providence
+             </option>
+             <option value="Pawtucket" >
+               Pawtucket
+             </option>
+             <option value="Smithfield" >
+               Smithfield
+             </option>
+             <option value="Tiverton" >
+               Tiverton
+             </option>
+             <option value="Warren" >
+               Warren
+             </option>
+             <option value="Warwick" >
+               Warwick
+             </option>
+             <option value="Wakefield" >
+               Wakefield
+             </option>
+           </select>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Radio" type="checkbox" name="field[32][]" value="Radio"   >
-         <span>
-           <label for="field_32Radio">
-             Radio
-           </label>
-         </span>
+       <div class="_form_element _field31 _full_width " >
+         <label class="_form-label">
+           Questions, Comments, or Reason(s) for Visit
+         </label>
+         <div class="_field-wrapper">
+           <input type="text" name="field[31]" value="" placeholder="" />
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Google" type="checkbox" name="field[32][]" value="Google"   >
-         <span>
-           <label for="field_32Google">
-             Google
+       <div class="_form_element _field33 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             How would you prefer to be contacted to schedule your appointment?*
            </label>
-         </span>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[33][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_33Phone" type="checkbox" name="field[33][]" value="Phone" class="any"  required>
+           <span>
+             <label for="field_33Phone">
+               Phone
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_33Email" type="checkbox" name="field[33][]" value="Email"   >
+           <span>
+             <label for="field_33Email">
+               Email
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_33Text" type="checkbox" name="field[33][]" value="Text"   >
+           <span>
+             <label for="field_33Text">
+               Text
+             </label>
+           </span>
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Social Media" type="checkbox" name="field[32][]" value="Social Media"   >
-         <span>
-           <label for="field_32Social Media">
-             Social Media
-           </label>
-         </span>
+       <div class="_form_element _x45054953 _full_width " >
+         <label class="_form-label">
+           Please verify your request*
+         </label>
+         <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+         </div>
        </div>
-       <div class="_row _checkbox-radio">
-         <input id="field_32Other" type="checkbox" name="field[32][]" value="Other"   >
-         <span>
-           <label for="field_32Other">
-             Other
+       <div class="_form_element _field32 _full_width " >
+         <div class="_row">
+           <label class="_form-label">
+             How Did You Hear About Us?
            </label>
-         </span>
+         </div>
+         <input data-autofill="false" type="hidden" name="field[32][]" value="~|">
+         <div class="_row _checkbox-radio">
+           <input id="field_32Doctor Referral" type="checkbox" name="field[32][]" value="Doctor Referral"   >
+           <span>
+             <label for="field_32Doctor Referral">
+               Doctor Referral
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Friend or Family Member" type="checkbox" name="field[32][]" value="Friend or Family Member"   >
+           <span>
+             <label for="field_32Friend or Family Member">
+               Friend or Family Member
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Radio" type="checkbox" name="field[32][]" value="Radio"   >
+           <span>
+             <label for="field_32Radio">
+               Radio
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Google" type="checkbox" name="field[32][]" value="Google"   >
+           <span>
+             <label for="field_32Google">
+               Google
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Social Media" type="checkbox" name="field[32][]" value="Social Media"   >
+           <span>
+             <label for="field_32Social Media">
+               Social Media
+             </label>
+           </span>
+         </div>
+         <div class="_row _checkbox-radio">
+           <input id="field_32Other" type="checkbox" name="field[32][]" value="Other"   >
+           <span>
+             <label for="field_32Other">
+               Other
+             </label>
+           </span>
+         </div>
+       </div>
+       <div class="_button-wrapper _full_width">
+         <button id="_form_3_submit" class="_submit" type="submit">
+           Submit
+         </button>
+       </div>
+       <div class="_clear-element">
        </div>
      </div>
-     <div class="_button-wrapper _full_width">
-       <button id="_form_3_submit" class="_submit" type="submit">
-         Submit
-       </button>
+     <div class="_form-thank-you" style="display:none;">
      </div>
-     <div class="_clear-element">
-     </div>
-   </div>
-   <div class="_form-thank-you" style="display:none;">
-   </div>
- </form><script type="text/javascript">
- window.cfields = {"30":"insurance_provider","26":"pappas","31":"questions_comments_or_reasons_for_visit","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","51":"time_of_day","52":"day_preference","32":"how_did_you_hear_about_us"};
- window._show_thank_you = function(id, message, trackcmp_url) {
+   </form><script type="text/javascript">
+ window.cfields = {"30":"insurance_provider","26":"pappas","31":"questions_comments_or_reasons_for_visit","33":"how_would_you_prefer_to_be_contacted_to_schedule_your_appointment","32":"how_did_you_hear_about_us"};
+ window._show_thank_you = function(id, message, trackcmp_url, email) {
    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
    form.querySelector('._form-content').style.display = 'none';
    thank_you.innerHTML = message;
    thank_you.style.display = 'block';
-   if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+   const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+   var visitorObject = window[vgoAlias];
+   if (email && typeof visitorObject !== 'undefined') {
+     visitorObject('setEmail', email);
+     visitorObject('update');
+   } else if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
      // Site tracking URL to use after inline form submission.
      _load_script(trackcmp_url);
    }
